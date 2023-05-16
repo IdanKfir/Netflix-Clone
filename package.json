@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@heroicons/react": "^2.0.18",
     "@next-auth/prisma-adapter": "^1.0.6",
     "@prisma/client": "^4.14.0",
     "@types/node": "20.1.4",
@@ -19,6 +20,7 @@
     "bcrypt": "^5.1.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.2",
+    "heroicons": "^2.0.18",
     "libs": "^0.1.2",
     "loadash": "^1.0.0",
     "lodash": "^4.17.21",
