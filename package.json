@@ -4,8 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma generate && next build",
     "start": "next start",
+    "postinstall": "prisma generate",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,7 +23,6 @@
     "eslint-config-next": "13.4.2",
     "heroicons": "^2.0.18",
     "libs": "^0.1.2",
-    "loadash": "^1.0.0",
     "lodash": "^4.17.21",
     "next": "13.4.2",
     "next-auth": "^4.22.1",
