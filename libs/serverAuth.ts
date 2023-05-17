@@ -1,10 +1,8 @@
 import { NextApiRequest, NextApiResponse } from 'next';
 import { getServerSession } from 'next-auth';
 
-import { PrismaClient } from '@prisma/client'; // Import the PrismaClient type
+import prismadb from '@/libs/prismadb';
 import { authOptions } from '@/pages/api/auth/[...nextauth]';
-
-const prismadb = new PrismaClient(); // Instantiate the PrismaClient
 
 const serverAuth = async (req: NextApiRequest, res: NextApiResponse) => {
   const session = await getServerSession(req, res, authOptions);
